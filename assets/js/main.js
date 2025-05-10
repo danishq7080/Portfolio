@@ -129,9 +129,9 @@ const projects = [
     {
         title: "Portfolio Website",
         description: "A personal portfolio showcasing projects and skills.",
-        image: "https://via.placeholder.com/300x200", // single image URL
-        link: "https://example.com/view",
-        code: "https://github.com/example/portfolio"
+        image: "assets/img/portfolio.png", // single image URL
+        link: "https://danishq7080.github.io/Portfolio/",
+        code: "https://github.com/danishq7080/Portfolio"
     },
     {
         title: "Weather App",
@@ -194,13 +194,18 @@ projects.forEach(project => {
 const educationData = [
     {
       title: "Bachelor of Technology",
-      year: "2020 - 2024",
-      institution: "XYZ University - Computer Science and Engineering"
+      year: "2022 - 2026",
+      institution: "Maulana Abul Kalam Azad University of Technology - Computer Science and Engineering"
     },
     {
       title: "Higher Secondary",
-      year: "2018 - 2020",
-      institution: "ABC School - PCM with Computer Science"
+      year: "2020 - 2022",
+      institution: "Guru Gobind Singh Public School - PCM with Computer Science"
+    },
+    {
+      title: "Secondary",
+      year: "2021 - 2022",
+      institution: "S K P Vidya Vihar"
     }
   ];
   

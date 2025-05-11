@@ -279,8 +279,8 @@ generateDeveloperStatsFromUsernames("danishq7080", "danishq7080")
 const Internships = [
   {
     title: "SkillsBuild & IBM Cloud Platform inEmerging Technologies (AI & Cloud)",
-    Orgination: "Edunet Foundation in Collaboration with AICTE",
-    description: "BWorked on IBM Cloud to deploy AI-powered chatbots using Watson Assistant. Gained hands-on experience with Watsonx for building ML models and performed data filtering and analysis to derive actionable insights..",
+    Orgination: "Edunet Foundation",
+    description: "Worked on IBM Cloud to deploy AI-powered chatbots using Watson Assistant. Gained hands-on experience with Watsonx for building ML models and performed data filtering and analysis to derive actionable insights..",
     duration: "4 weeks",
     cetificateLink: "https://github.com/danishq7080/Internship-Certificate"
   },

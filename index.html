@@ -87,7 +87,8 @@
 
                 <div>
                     <h2 class="about__subtitle">I'am Md Danish Qumar</h2>
-                    <p style="font-size: 20px;" class="about__text"> Hi there! I'm a Computer Science Engineering student with a deep passion
+                    <p style="font-size: 20px;" class="about__text"> Hi there! I'm a Computer Science Engineering
+                        student with a deep passion
                         for coding, problem-solving, and exploring new technologies. I thrive on turning ideas into
                         reality through code and love the process of learning and building along the way.
 
@@ -165,34 +166,43 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <a style="text-align: center;" class="contact__button button"
-                        href="mailto:danishq7080@gmail.com">SEND</a>
+                <form id="contact-form" class="contact__form">
+                    <input type="text" name="name" placeholder="Name" class="contact__input" required>
+                    <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                    <textarea name="message" cols="0" rows="10" placeholder="Your Message" class="contact__input"
+                        required></textarea>
+                    <button type="submit" class="contact__button button">SEND</button>
                 </form>
             </div>
         </section>
-    </main>
+        <!-- EmailJS SDK -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-    <!--===== FOOTER =====-->
-    <footer class="footer">
-        <p class="footer__title">Md Danish Qumar</p>
-        <div class="footer__social">
-            <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
-            <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("6SCkupo4vhNs11Vz2"); // 🔹 Yaha apna PUBLIC KEY daalo
+            })();
+        </script>
 
-        </div>
+        <!-- Apna contact.js file -->
+        <script src="contact.js"></script>
 
-    </footer>
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Md Danish Qumar</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            </div>
+            <p class="footer__copy">© 2025 Md Danish Qumar | All Rights Reserved</p>
+        </footer>
 
 
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js"></script>
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
 </body>
 
 </html>

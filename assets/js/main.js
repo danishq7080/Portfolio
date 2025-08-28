@@ -336,3 +336,21 @@ languages.forEach((lang) => {
     `;
   programingContainer.appendChild(card);
 });
+
+/* ===== CONTACT FORM ===== */
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "service_ush3uh3",   // 🔹 apna EmailJS service ID daalo
+    "template_mfrvnx3",  // 🔹 apna EmailJS template ID daalo
+    this,
+    "6SCkupo4vhNs11Vz2" // 🔹 apna EmailJS public key daalo
+  ).then(() => {
+    alert("Message sent successfully ✅");
+    this.reset();
+  }, (error) => {
+    alert("Message failed ❌ Please try again.");
+    console.error(error);
+  });
+});
